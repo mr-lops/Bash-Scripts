@@ -9,6 +9,6 @@ do
   particao=$(echo $output | awk '{ print $7 }' )
   if [ $tam_usado -ge 90 ]; then
     echo "ATENÇÂO: Disco quase cheio em $particao($tam_usado%) na maquina $(hostname) na data $(date)"
-# | mail -s "ALERTA DE DISCO QUASE CHEIO EM $(hostname)" pinov32612@saturdata.com
+# | mail -s "ALERTA DE DISCO QUASE CHEIO EM $(hostname)" email@exemplo.com
   fi
 done
